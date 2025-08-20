@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій ТГ канал</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3784893608468213');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #222;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Інноваційний ТГ - канал: голосування, прогнози та щоденні результати.  
+    Тренуй мислення й дивись, як вирішує більшість і отримуй за це бонуси 🚀
+  </h1>
+  <p>Отримай прогнози та бонуси щодня у Telegram</p>
+  
+  <!-- Кнопка с событием Lead -->
+  <a href="https://t.me/pplsfutures" 
+     target="_blank" 
+     class="button" 
+     onclick="fbq('track', 'Lead');">
+     Підписатися
+  </a>
+</body>
+</html>
