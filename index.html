@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мій ТГ канал</title>
-  
+  <title>Народний Futures — TG</title>
+
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -19,54 +19,122 @@
   fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"
-  /></noscript>
+    src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"/></noscript>
   <!-- End Meta Pixel Code -->
 
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      text-align: center;
-      padding: 50px;
+    :root{
+      --bg:#0f0f12;
+      --card:#ffffff;
+      --dark:#17181c;
+      --text:#111;
+      --muted:#5a5f6d;
+      --blue:#1e90ff;
+      --blue-dark:#0d6ad6;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(0,0,0,.15);
     }
-    h1 {
-      color: #222;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,#0b0c10,#161820 45%, #0b0c10 100%);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+      color:var(--text);
     }
-    p {
-      font-size: 18px;
-      color: #444;
+    .card{
+      width:min(720px,100%);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:var(--card);
+      box-shadow:var(--shadow);
     }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      background-color: #007bff;
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+    .hero{
+      background: var(--dark);
+      color:#fff;
+      text-align:center;
+      padding:40px 28px 28px;
     }
-    a.button:hover {
-      background-color: #0056b3;
+    .tg-badge{
+      width:86px; height:86px;
+      background:#1c232e;
+      border:2px solid rgba(255,255,255,.12);
+      border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 18px;
+    }
+    .tg-badge img{width:54px; height:54px; display:block}
+    h1{
+      margin:0 0 8px;
+      font-size: clamp(22px, 3.6vw, 32px);
+      line-height:1.25;
+      font-weight:700;
+      color:#fff;
+    }
+    .hero .subtitle{
+      margin:0;
+      color:#c8ccd6;
+      font-size:clamp(13px,2.6vw,16px);
+    }
+    .body{
+      padding:28px 22px 34px;
+      text-align:center;
+      background:#f4f6fa;
+    }
+    .body p{
+      margin:0 auto 22px;
+      max-width:560px;
+      color:#2b2f38;
+      font-size:clamp(14px,2.6vw,17px);
+      line-height:1.55;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 24px;
+      background:var(--blue);
+      color:#fff; text-decoration:none; font-weight:700;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(30,144,255,.3);
+      transition:transform .12s ease, background .12s ease, box-shadow .12s ease;
+    }
+    .btn:hover{ background:var(--blue-dark); box-shadow:0 8px 18px rgba(13,106,214,.35); transform:translateY(-1px) }
+    .btn:active{ transform:translateY(0) }
+    .note{
+      margin-top:12px;
+      color:#7a8191;
+      font-size:13px;
     }
   </style>
 </head>
 <body>
-  <h1>
-    Інноваційний ТГ - канал: голосування, прогнози та щоденні результати.  
-    Тренуй мислення й дивись, як вирішує більшість і отримуй за це бонуси 🚀
-  </h1>
-  <p>Отримай прогнози та бонуси щодня у Telegram</p>
-  
-  <!-- Кнопка с событием Lead -->
-  <a href="https://t.me/pplsfutures" 
-     target="_blank" 
-     class="button" 
-     onclick="fbq('track', 'Lead');">
-     Підписатися
-  </a>
+  <main class="card" role="main" aria-label="Преленд Telegram каналу">
+    <section class="hero">
+      <div class="tg-badge" aria-hidden="true">
+        <img alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+      </div>
+      <h1>Отримай прогнози та бонуси щодня у Telegram</h1>
+      <p class="subtitle">канал відкритий</p>
+    </section>
+
+    <section class="body">
+      <p>
+        Інноваційний ТГ‑канал: голосування, прогнози та щоденні результати.
+        Тренуй мислення й дивись, як вирішує більшість — і отримуй за це бонуси.
+      </p>
+
+      <a class="btn"
+         href="https://t.me/pplsfutures?utm_source=meta&utm_medium=cpc&utm_campaign=quiz&utm_content=blue_btn"
+         target="_blank" rel="noopener noreferrer"
+         onclick="fbq('track','Lead');">
+        перейти у Telegram
+      </a>
+
+      <div class="note">Матеріал має ознайомчий характер і не є фінансовою порадою.</div>
+    </section>
+  </main>
 </body>
+</html>
 </html>
