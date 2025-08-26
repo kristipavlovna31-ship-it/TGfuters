@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Народний Futures — TG</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3784893608468213');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml">
+  <style>
+    :root{
+      --bg:#0f0f12;
+      --card:#ffffff;
+      --dark:#17181c;
+      --text:#111;
+      --muted:#5a5f6d;
+      --blue:#1e90ff;
+      --blue-dark:#0d6ad6;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(0,0,0,.15);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,#0b0c10,#161820 45%, #0b0c10 100%);
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+      color:var(--text);
+    }
+    .card{
+      width:min(720px,100%);
+      border-radius:var(--radius);
+      overflow:hidden;
+      background:var(--card);
+      box-shadow:var(--shadow);
+    }
+    .hero{
+      background: var(--dark);
+      color:#fff;
+      text-align:center;
+      padding:40px 28px 28px;
+    }
+    .tg-badge{
+      width:86px; height:86px;
+      background:#1c232e;
+      border:2px solid rgba(255,255,255,.12);
+      border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      margin:0 auto 18px;
+    }
+    .tg-badge img{width:54px; height:54px; display:block}
+    h1{
+      margin:0 0 8px;
+      font-size: clamp(22px, 3.6vw, 32px);
+      line-height:1.25;
+      font-weight:700;
+      color:#fff;
+    }
+    .hero .subtitle{
+      margin:0;
+      color:#c8ccd6;
+      font-size:clamp(13px,2.6vw,16px);
+    }
+    .body{
+      padding:28px 22px 34px;
+      text-align:center;
+      background:#f4f6fa;
+    }
+    .body p{
+      margin:0 auto 22px;
+      max-width:560px;
+      color:#2b2f38;
+      font-size:clamp(14px,2.6vw,17px);
+      line-height:1.55;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 24px;
+      background:var(--blue);
+      color:#fff; text-decoration:none; font-weight:700;
+      border-radius:12px;
+      box-shadow:0 6px 16px rgba(30,144,255,.3);
+      transition:transform .12s ease, background .12s ease, box-shadow .12s ease;
+    }
+    .btn:hover{ background:var(--blue-dark); box-shadow:0 8px 18px rgba(13,106,214,.35); transform:translateY(-1px) }
+    .btn:active{ transform:translateY(0) }
+    .note{
+      margin-top:12px;
+      color:#7a8191;
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Преленд Telegram каналу">
+    <section class="hero">
+      <div class="tg-badge" aria-hidden="true">
+        <img alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+      </div>
+      <h1>Відкривай угоди разом із підписниками каналу</h1>
+      <p class="subtitle">канал відкритий</p>
+    </section>
+
+    <section class="body">
+      <p>
+        Щодня спільнота голосує за монету, напрямок та кредитне плече.
+        Результати одразу відображаються в каналі. Приєднуйся до каналу Народний Futures - ризики беру я, а бонуси отримаєш ти
+      </p>
+
+     <a class="btn"
+   href="https://t.me/+ZsdsXMTKwOcyNTli"
+   target="_blank" rel="noopener noreferrer"
+   onclick="fbq('track','Lead');">
+   Перейти у Telegram
+</a>
+
+
+      <div class="note"></div>
+    </section>
+  </main>
+</body>
+</html>
+</html>
