@@ -1,141 +1,125 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Народний Futures — TG</title>
 
   <!-- Meta Pixel Code -->
   <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '3784893608468213');
-  fbq('track', 'PageView');
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','3784893608468213'); fbq('track','PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"/></noscript>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3784893608468213&ev=PageView&noscript=1"/>
+  </noscript>
   <!-- End Meta Pixel Code -->
 
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" type="image/svg+xml">
+
   <style>
     :root{
-      --bg:#0f0f12;
-      --card:#ffffff;
-      --dark:#17181c;
-      --text:#111;
-      --muted:#5a5f6d;
-      --blue:#1e90ff;
-      --blue-dark:#0d6ad6;
-      --radius:16px;
-      --shadow:0 10px 25px rgba(0,0,0,.15);
+      --bg1:#d7f0c5; --bg2:#a6cda4;
+      --card:#ffffff; --text:#0f1720; --muted:#6b7280;
+      --blue:#1e88e5; --blue-hover:#166fcc;
+      --radius:22px; --shadow:0 18px 45px rgba(0,0,0,.12);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg,#0b0c10,#161820 45%, #0b0c10 100%);
-      display:flex; align-items:center; justify-content:center;
-      padding:24px;
-      color:var(--text);
+    body {
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f4fbb3, #b1dba0, #8ac57e);
+  display:flex; 
+  align-items:center; 
+  justify-content:center;
+  padding:28px;
+}
+
+
+    .tg-bar{
+      position:fixed; top:0; left:0; right:0; height:52px;
+      display:flex; align-items:center; gap:10px;
+      padding:0 14px;
+      color:#3b4a59; font-weight:600;
+      background:linear-gradient(to bottom, rgba(255,255,255,.9), rgba(255,255,255,.6));
+      backdrop-filter: blur(6px);
+      border-bottom:1px solid rgba(0,0,0,.06);
     }
+    .tg-bar img{width:22px; height:22px}
+
+    .wrap{width:min(720px,100%); margin-top:56px}
+
     .card{
-      width:min(720px,100%);
-      border-radius:var(--radius);
-      overflow:hidden;
       background:var(--card);
+      border-radius:var(--radius);
       box-shadow:var(--shadow);
+      padding:28px 22px 26px;
     }
-    .hero{
-      background: var(--dark);
-      color:#fff;
-      text-align:center;
-      padding:40px 28px 28px;
+
+    .avatar{
+      width:128px; height:128px; border-radius:50%;
+      display:block; margin:0 auto 16px; object-fit:cover;
+      border:4px solid #f2f6fb;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
     }
-    .tg-badge{
-      width:86px; height:86px;
-      background:#1c232e;
-      border:2px solid rgba(255,255,255,.12);
-      border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      margin:0 auto 18px;
-    }
-    .tg-badge img{width:54px; height:54px; display:block}
+
     h1{
-      margin:0 0 8px;
-      font-size: clamp(22px, 3.6vw, 32px);
-      line-height:1.25;
-      font-weight:700;
-      color:#fff;
+      margin:0 auto 6px; text-align:center;
+      font-size: clamp(22px, 3.8vw, 32px);
+      line-height:1.2; color:var(--text);
+      font-weight:800;
     }
-    .hero .subtitle{
-      margin:0;
-      color:#c8ccd6;
-      font-size:clamp(13px,2.6vw,16px);
+    .sub{
+      text-align:center; color:var(--muted);
+      font-size:15px; margin:0 0 22px;
     }
-    .body{
-      padding:28px 22px 34px;
-      text-align:center;
-      background:#f4f6fa;
-    }
-    .body p{
-      margin:0 auto 22px;
-      max-width:560px;
-      color:#2b2f38;
-      font-size:clamp(14px,2.6vw,17px);
-      line-height:1.55;
-    }
+
     .btn{
-      display:inline-block;
-      padding:14px 24px;
-      background:var(--blue);
-      color:#fff; text-decoration:none; font-weight:700;
-      border-radius:12px;
-      box-shadow:0 6px 16px rgba(30,144,255,.3);
-      transition:transform .12s ease, background .12s ease, box-shadow .12s ease;
+      display:block; width:min(360px, 100%); margin:0 auto;
+      text-align:center; text-decoration:none; user-select:none;
+      background:var(--blue); color:#fff; font-weight:700;
+      padding:14px 18px; border-radius:999px;
+      box-shadow:0 8px 22px rgba(30,136,229,.35);
+      transition:background .12s ease, transform .08s ease, box-shadow .12s ease;
     }
-    .btn:hover{ background:var(--blue-dark); box-shadow:0 8px 18px rgba(13,106,214,.35); transform:translateY(-1px) }
-    .btn:active{ transform:translateY(0) }
-    .note{
-      margin-top:12px;
-      color:#7a8191;
-      font-size:13px;
+    .btn:hover{ background:var(--blue-hover); box-shadow:0 10px 26px rgba(22,111,204,.4) }
+    .btn:active{ transform:translateY(1px) }
+
+    .hint{
+      text-align:center; color:#93a1af; font-size:14px; margin-top:10px;
     }
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-label="Преленд Telegram каналу">
-    <section class="hero">
-      <div class="tg-badge" aria-hidden="true">
-        <img alt="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
-      </div>
-      <h1>Відкривай угоди разом із підписниками каналу</h1>
-      <p class="subtitle">канал відкритий</p>
-    </section>
+  <div class="tg-bar">
+    <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+    <span>Telegram</span>
+  </div>
 
-    <section class="body">
-      <p>
-        Щодня спільнота голосує за монету, напрямок та кредитне плече.
-        Результати одразу відображаються в каналі. Приєднуйся до каналу Народний Futures - ризики беру я, а бонуси отримаєш ти
-      </p>
+  <main class="wrap" role="main">
+    <section class="card">
+      <!-- аватар -->
+      <img class="avatar" alt="Аватар каналу" src="avatar.jpg" />
 
-    <a class="btn"
-   href="https://t.me/+VfhmBEH1ja1mMDky"
-   target="_blank" rel="noopener noreferrer"
-   onclick="fbq('track','Lead');">
-  Перейти у Telegram
-</a>
+      <h1>Народний Futures</h1>
+      <p class="sub">Відкривай угоди разом з підписниками • щоденні голосування та результати</p>
 
+      <a class="btn"
+         href="https://t.me/+VfhmBEH1ja1mMDky"
+         target="_blank" rel="noopener noreferrer"
+         onclick="fbq('track','Lead');">
+        Приєднатися
+      </a>
 
-
-      <div class="note"></div>
+      <div class="hint">Натисни «Приєднатися», щоб перейти в Telegram</div>
     </section>
   </main>
 </body>
 </html>
+
